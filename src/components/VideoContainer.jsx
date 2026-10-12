@@ -51,29 +51,9 @@ const VideoContainer = () => {
         }
     }
   return (
-      <div style={{
-          position: 'relative',
-          display: 'flex',
-          maxHeight:'100vh',
-          padding:'20px',
-          justifyContent: 'center',
-          alignItems: 'center',
-          overflow: 'hidden',
-          background: 'linear-gradient(135deg, #545557 0%, #20e8f7 48%, #595a5c 100%)',
-          fontFamily: 'Arial, sans-serif',
-      }}>
-    
-          <div style={{
-              position: 'relative',
-              zIndex: 1,
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              width: '100%',
-              maxWidth: '520px',
-              gap: '24px',
-          }}>
-              <h1 style={{color:'white'}}>Video Song's</h1>
+      <main className="video-page">
+          <div className="video-content">
+              <h1 className="page-title">Video Song's</h1>
               <Cards
                   el={getData[video]}
                   handleNext={handleNext}
@@ -82,7 +62,7 @@ const VideoContainer = () => {
                   video={video}
               />
           </div>
-      </div>
+      </main>
     )
 }
 
